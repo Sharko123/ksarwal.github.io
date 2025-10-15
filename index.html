@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuber Sarwal - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Gradient Background -->
+    <div class="gradient-background">
+        <div class="gradient-sphere sphere-1"></div>
+        <div class="gradient-sphere sphere-2"></div>
+        <div class="gradient-sphere sphere-3"></div>
+        <div class="glow"></div>
+        <div class="grid-overlay"></div>
+        <div class="noise-overlay"></div>
+        <div class="particles-container" id="particles-container"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero-content">
+            <p class="greeting">Hi, I'm</p>
+            <h1>Kuber Sarwal</h1>
+            <h2>CS @ Georgia Tech</h2>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-button primary-btn">Contact Me</a>
+                <a href="Kuber_Sarwal_Resume.pdf" target="_blank" class="cta-button secondary-btn">View CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-education-wrapper">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hey! I'm Kuber Sarwal, a Sophomore Computer Science student at Georgia Tech with a passion for AI, research, and software development. I'm deeply interested in how technology can drive social good and make a real-world impact. This past summer, I worked as a Research Intern at Rutgers, where I studied algorithmic bias in redlining and developed methods to reduce unfairness in loan approval systems using reweighting and domain knowledge. In my free time, I enjoy DJing, playing pickleball, and weightlifting. Feel free to reach out as I'm always open to collaborations, research opportunities, and startup ventures that align technology with service.</p>
+                    <p>I also try to make an impact on my community. In New Jersey, I co-founded Project Tech Cycle, a nonprofit initiative with another student to repair and distribute over 200 laptops to individuals in need. I also organized a local drive and helped fix over 50 laptops sent to Ghana, expanding access to education and opportunity through technology.</p>
+                </div>
+
+                <div class="education-card">
+                    <h3 style="font-size: 2rem; margin-bottom: 1.5rem; text-align: center;">Education</h3>
+                    <div class="education-header">
+                        <img src="imgs/georgia-tech-yellow-jackets-logo-png_seeklogo-527918.png" alt="Georgia Tech Logo" class="gt-logo">
+                        <div>
+                            <h3>Georgia Institute of Technology</h3>
+                            <p><strong>Bachelor of Science in Computer Science</strong></p>
+                            <p>Expected Graduation: May 2028 | Atlanta, GA</p>
+                        </div>
+                    </div>
+                    <div class="courses">
+                        <h5>Key Courses:</h5>
+                        <p>Linear Algebra, Introduction to Object-Oriented Programming</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <img src="imgs/Rutgers.png" alt="Rutgers Logo" class="company-logo">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Research Intern</h3>
+                                <p class="company">Rutgers University - Camden, NJ</p>
+                            </div>
+                            <span class="date">Jan. 2024 – Jan. 2025</span>
+                        </div>
+                        <ul>
+                            <li>Analyzed algorithmic bias in redlining using HMDA datasets (25M+ samples, 2007–2023) and built ML models (Random Forest, SVM, Logistic Regression, Neural Networks) in PyTorch/scikit-learn</li>
+                            <li>Reduced bias in HMDA datasets by up to 59% using reweighting and domain knowledge via AI Fairness 360; published findings at IEEE BigData 2024</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img src="imgs/Learnroll.webp" alt="Learnroll Logo" class="company-logo">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Machine Learning Intern</h3>
+                                <p class="company">Learnroll LLC - Montgomery, NJ</p>
+                            </div>
+                            <span class="date">Dec. 2024 – Mar. 2025</span>
+                        </div>
+                        <ul>
+                            <li>Labeled over 10,000 video frames using CVAT and trained a YOLOv8-based motion detection model to track CPR keypoints and evaluate compression metrics</li>
+                            <li>Showcased AI-driven CPR training with live demos at a heart charity event, highlighting big data tools and healthcare innovation to 50+ attendees</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img src="imgs/JEI.png" alt="JEI Logo" class="company-logo">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Independent Researcher</h3>
+                                <p class="company">Journal of Emerging Investigators - Remote</p>
+                            </div>
+                            <span class="date">Jun. 2023 – Jan. 2024</span>
+                        </div>
+                        <ul>
+                            <li>Developed and trained a custom computer vision AlexNet CNN model on 14,000+ shark species images achieving 98.7% accuracy</li>
+                            <li>Authored a peer-reviewed paper in the Journal of Emerging Investigators and presented findings at an AI research symposium with 50+ attendees</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img src="imgs/uMobi.jpeg" alt="uMobi Logo" class="company-logo">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Software Engineering Intern</h3>
+                                <p class="company">uMobi Solutions Corp - Remote</p>
+                            </div>
+                            <span class="date">Jun. 2023 – Sep. 2023</span>
+                        </div>
+                        <ul>
+                            <li>Implemented REST and Zyte APIs with web spiders for data mining to scrape, process, and display live news feeds on the Raydeo mobile app</li>
+                            <li>Optimized task management and data structures to reduce news information transmission time by up to 50%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects & Publications</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Perfect Punch - BDBI@GT <span class="in-progress-tag">(In Progress)</span></h3>
+                    <p>AI-powered boxing assistant that classifies punches and evaluates metrics using active learning pipeline with KNNs, Neural Networks, and Random Forests achieving 96% accuracy. Integrated LLM coaching agent with Flask–React dashboard.</p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">KNN</span>
+                        <span class="skill-tag">Neural Networks</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>ServeSmart</h3>
+                    <p>XGBRegressor-based model deployed via Flask to forecast restaurant demand with 86% accuracy. Features ingredient analyzer and budget manager with OpenAI chatbot for planning and surplus routing.</p>
+                    <div class="project-skills">
+                        <span class="skill-tag">ReactJS</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">OpenAI API</span>
+                        <span class="skill-tag">XGBoost</span>
+                    </div>
+                    <a href="https://github.com/anishneema/HackGTproject" target="_blank" class="project-link">View on GitHub →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>BeatTok</h3>
+                    <p>TikTok-style app for discovering and sharing AI-generated beats using React and fine-tuned BeatGen neural network. 1st place at Iollin Challenge Hackathon.</p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Neural Networks</span>
+                    </div>
+                    <a href="https://github.com/Sharko123/BeatTok" target="_blank" class="project-link">View on GitHub →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Algorithmic Bias in Redlining Research</h3>
+                    <p>Published research on reducing algorithmic bias in HMDA datasets (25M+ samples) by up to 59% using reweighting and domain knowledge via AI Fairness 360. Presented at IEEE BigData 2024.</p>
+                    <div class="project-skills">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">AI Fairness 360</span>
+                        <span class="skill-tag">Random Forest</span>
+                        <span class="skill-tag">Neural Networks</span>
+                    </div>
+                    <a href="https://doi.org/10.1109/BigData62323.2024.10825978" target="_blank" class="project-link">View Publication →</a>
+                    <a href="https://github.com/Sharko123/RedliningBias" target="_blank" class="project-link" style="margin-left: 1rem;">View Code →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>SharkNet: Shark Species Classification</h3>
+                    <p>Developed and trained a custom AlexNet CNN model achieving 98.7% accuracy on 14,000+ shark species images. Published in the Journal of Emerging Investigators and presented at an AI research symposium.</p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">CNN</span>
+                        <span class="skill-tag">AlexNet</span>
+                        <span class="skill-tag">Computer Vision</span>
+                    </div>
+                    <a href="https://doi.org/10.59720/24-013" target="_blank" class="project-link">View Publication →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>DJ Helper App</h3>
+                    <p>AI-assisted song analysis and recommendation tool for DJs. Uses ML models to analyze audio files for genre, key, BPM, and embeddings. Finds related songs with similar BPM and key to help create smooth mixes and discover compatible tracks.</p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Gradio</span>
+                        <span class="skill-tag">Transformers</span>
+                        <span class="skill-tag">Librosa</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Audio Analysis</span>
+                    </div>
+                    <a href="https://github.com/Sharko123/AppliedResearchOAfa2025" target="_blank" class="project-link">View on GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+
+            <!-- Top Section: Text Categories and Icon Grid -->
+            <div class="skills-main-layout">
+                <!-- Left Side: Text Categories -->
+                <div class="skills-text-section">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">Java</div>
+                            <div class="skill-item">Python</div>
+                            <div class="skill-item">JavaScript</div>
+                            <div class="skill-item">HTML/CSS</div>
+                            <div class="skill-item">SQL</div>
+                            <div class="skill-item">C++</div>
+                            <div class="skill-item">C#</div>
+                            <div class="skill-item">R</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Frameworks</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">React</div>
+                            <div class="skill-item">React Native</div>
+                            <div class="skill-item">Node.js</div>
+                            <div class="skill-item">Flask</div>
+                            <div class="skill-item">Angular</div>
+                            <div class="skill-item">Django</div>
+                            <div class="skill-item">FastAPI</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Libraries & Tools</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">PyTorch</div>
+                            <div class="skill-item">TensorFlow</div>
+                            <div class="skill-item">Scikit-learn</div>
+                            <div class="skill-item">Pandas</div>
+                            <div class="skill-item">NumPy</div>
+                            <div class="skill-item">Matplotlib</div>
+                            <div class="skill-item">Git</div>
+                            <div class="skill-item">AWS</div>
+                            <div class="skill-item">Azure</div>
+                            <div class="skill-item">MongoDB</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Hexagonal Icon Grid -->
+                <div class="skills-icons-section">
+                    <div class="hexagon-grid">
+                        <!-- Left Column (3 hexagons) -->
+                        <div class="hex-column left-column">
+                            <div class="hexagon">
+                                <div class="hexagon-content">
+                                    <img src="imgs/html.png" alt="HTML">
+                                    <p>HTML</p>
+                                </div>
+                            </div>
+                            <div class="hexagon">
+                                <div class="hexagon-content">
+                                    <img src="imgs/css-3.png" alt="CSS">
+                                    <p>CSS</p>
+                                </div>
+                            </div>
+                            <div class="hexagon">
+                                <div class="hexagon-content">
+                                    <img src="imgs/Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript">
+                                    <p>JAVASCRIPT</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Middle Column (4 hexagons) -->
+                        <div class="hex-column middle-column">
+                            <div class="hexagon">
+                                <div class="hexagon-content">
+                                    <img src="imgs/reactTransparent.png" alt="React">
+                                    <p>REACT</p>
+                                </div>
+                            </div>
+                            <div class="hexagon">
+                                <div class="hexagon-content">
+                                    <img src="imgs/java.png" alt="Java">
+                                    <p>JAVA</p>
+                                </div>
+                            </div>
+                            <div class="hexagon">
+                                <div class="hexagon-content">
+                                    <img src="imgs/hd-python-logo-symbol-transparent-png-735811696257415dbkifcuokn-removebg-preview.png" alt="Python">
+                                    <p>PYTHON</p>
+                                </div>
+                            </div>
+                            <div class="hexagon">
+                                <div class="hexagon-content">
+                                    <img src="imgs/pytorchTransparant-removebg-preview.png" alt="PyTorch">
+                                    <p>PYTORCH</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column (3 hexagons) -->
+                        <div class="hex-column right-column">
+                            <div class="hexagon">
+                                <div class="hexagon-content">
+                                    <img src="imgs/Tensorflow_logo.svg.png" alt="TensorFlow">
+                                    <p>TENSORFLOW</p>
+                                </div>
+                            </div>
+                            <div class="hexagon">
+                                <div class="hexagon-content">
+                                    <img src="imgs/git-removebg-preview.png" alt="Git">
+                                    <p>GIT</p>
+                                </div>
+                            </div>
+                            <div class="hexagon">
+                                <div class="hexagon-content">
+                                    <img src="imgs/aws-removebg-preview.png" alt="AWS">
+                                    <p>AWS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Areas of Experience -->
+            <div class="areas-of-experience">
+                <h3>Areas of Experience</h3>
+                <div class="experience-areas-grid">
+                    <div class="experience-area-item">Machine Learning</div>
+                    <div class="experience-area-item">Computer Vision</div>
+                    <div class="experience-area-item">AI Fairness</div>
+                    <div class="experience-area-item">Neural Networks</div>
+                    <div class="experience-area-item">Data Mining</div>
+                    <div class="experience-area-item">Web Development</div>
+                    <div class="experience-area-item">Full Stack</div>
+                    <div class="experience-area-item">API Development</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Get In Touch</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 3rem; color: #d1d5db;">Feel free to reach out for collaborations, opportunities, or just to connect!</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <a href="https://github.com/Sharko123" target="_blank" title="GitHub">
+                            <img src="imgs/github.png" alt="GitHub" class="contact-icon">
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://www.linkedin.com/in/kuber-sarwal/" target="_blank" title="LinkedIn">
+                            <img src="imgs/linkedin (1).png" alt="LinkedIn" class="contact-icon">
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="mailto:ksarwal3@gatech.edu" title="Email: ksarwal3@gatech.edu">
+                            <img src="imgs/email.png" alt="Email" class="contact-icon">
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="tel:+19084272646" title="Phone: 908-427-2646">
+                            <img src="imgs/phone-call.png" alt="Phone" class="contact-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Create particle effect
+        const particlesContainer = document.getElementById('particles-container');
+        const particleCount = 80;
+
+        // Create particles
+        for (let i = 0; i < particleCount; i++) {
+            createParticle();
+        }
+
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+
+            // Random size (small)
+            const size = Math.random() * 3 + 1;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+
+            // Initial position
+            resetParticle(particle);
+
+            particlesContainer.appendChild(particle);
+
+            // Animate
+            animateParticle(particle);
+        }
+
+        function resetParticle(particle) {
+            // Random position
+            const posX = Math.random() * 100;
+            const posY = Math.random() * 100;
+
+            particle.style.left = `${posX}%`;
+            particle.style.top = `${posY}%`;
+            particle.style.opacity = '0';
+
+            return {
+                x: posX,
+                y: posY
+            };
+        }
+
+        function animateParticle(particle) {
+            // Initial position
+            const pos = resetParticle(particle);
+
+            // Random animation properties
+            const duration = Math.random() * 10 + 10;
+            const delay = Math.random() * 5;
+
+            // Animate with GSAP-like timing
+            setTimeout(() => {
+                particle.style.transition = `all ${duration}s linear`;
+                particle.style.opacity = Math.random() * 0.3 + 0.1;
+
+                // Move in a slight direction
+                const moveX = pos.x + (Math.random() * 20 - 10);
+                const moveY = pos.y - Math.random() * 30; // Move upwards
+
+                particle.style.left = `${moveX}%`;
+                particle.style.top = `${moveY}%`;
+
+                // Reset after animation completes
+                setTimeout(() => {
+                    animateParticle(particle);
+                }, duration * 1000);
+            }, delay * 1000);
+        }
+
+        // Mouse interaction
+        document.addEventListener('mousemove', (e) => {
+            // Create particles at mouse position
+            const mouseX = (e.clientX / window.innerWidth) * 100;
+            const mouseY = (e.clientY / window.innerHeight) * 100;
+
+            // Create temporary particle
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+
+            // Small size
+            const size = Math.random() * 4 + 2;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+
+            // Position at mouse
+            particle.style.left = `${mouseX}%`;
+            particle.style.top = `${mouseY}%`;
+            particle.style.opacity = '0.6';
+
+            particlesContainer.appendChild(particle);
+
+            // Animate outward
+            setTimeout(() => {
+                particle.style.transition = 'all 2s ease-out';
+                particle.style.left = `${mouseX + (Math.random() * 10 - 5)}%`;
+                particle.style.top = `${mouseY + (Math.random() * 10 - 5)}%`;
+                particle.style.opacity = '0';
+
+                // Remove after animation
+                setTimeout(() => {
+                    particle.remove();
+                }, 2000);
+            }, 10);
+
+            // Subtle movement of gradient spheres
+            const spheres = document.querySelectorAll('.gradient-sphere');
+            const moveX = (e.clientX / window.innerWidth - 0.5) * 5;
+            const moveY = (e.clientY / window.innerHeight - 0.5) * 5;
+
+            spheres.forEach(sphere => {
+                const currentTransform = getComputedStyle(sphere).transform;
+                sphere.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            });
+        });
+    </script>
+
+</body>
+</html>
