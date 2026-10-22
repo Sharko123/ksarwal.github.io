@@ -593,6 +593,47 @@ section {
     box-shadow: 0 0 10px rgba(59, 130, 246, 0.8);
 }
 
+.project-video {
+    margin-bottom: 1rem;
+}
+
+.project-video video {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    border-radius: 8px;
+    background: #000;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.video-caption {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6) !important;
+    margin: 0.5rem 0 0 !important;
+    text-align: center;
+}
+
+.project-process {
+    border-left: 2px solid rgba(59, 130, 246, 0.4);
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-process h4 {
+    color: #60A5FA;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.project-process p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 0;
+}
+
 .project-link {
     display: inline-block;
     color: #60A5FA;

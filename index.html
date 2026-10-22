@@ -49,7 +49,7 @@
             <div class="about-education-wrapper">
                 <div class="about-text">
                     <h2>About Me</h2>
-                    <p>Hey! I'm Kuber Sarwal, a Computer Science student at Georgia Tech studying Artificial Intelligence and Systems & Architecture, with a passion for AI, research, and software development. I'm deeply interested in how technology can drive social good and make a real-world impact. This past summer, I worked as a Machine Learning Engineer Intern on the GNC team at Terran Orbital Corporation, a Lockheed Martin company, where I built computer vision and attitude estimation pipelines for spacecraft pointing. I'm also currently developing a new JAX-CFD open source simulation environment for a research lab, a Georgia Tech VIP program sponsored by NVIDIA. In my free time, I enjoy DJing, playing pickleball, and weightlifting. Feel free to reach out as I'm always open to collaborations, research opportunities, and startup ventures that align technology with service.</p>
+                    <p>Hey! I'm Kuber Sarwal, a Computer Science student at Georgia Tech studying Artificial Intelligence and Systems & Architecture, with a passion for AI, research, and software development. I'm deeply interested in how technology can drive social good and make a real-world impact. This past summer, I worked as a Machine Learning Engineer Intern on the GNC team at Terran Orbital Corporation, a Lockheed Martin company, where I built computer vision and attitude estimation pipelines for spacecraft pointing. I'm currently a machine learning researcher at Georgia Tech in the SAIL Lab, working on language-conditioned multi-robot teleoperation, and in the Dynamics and Control Group, building deep learning models for interferometric thickness measurement. I'm also an ML engineer in the AI MakerSpace Nexus VI, a Georgia Tech VIP program sponsored by NVIDIA. In my free time, I enjoy DJing, playing pickleball, and weightlifting. Feel free to reach out as I'm always open to collaborations, research opportunities, and startup ventures that align technology with service.</p>
                     <p>I also try to make an impact on my community. In New Jersey, I co-founded Project Tech Cycle, a nonprofit initiative with another student to repair and distribute over 200 laptops to individuals in need. I also organized a local drive and helped fix over 50 laptops sent to Ghana, expanding access to education and opportunity through technology.</p>
                 </div>
 
@@ -65,7 +65,7 @@
                     </div>
                     <div class="courses">
                         <h5>Key Courses:</h5>
-                        <p>Data Structures and Algorithms, Computer Organization and Programming, Discrete Math, Linear Algebra, Differential Equations, Object-Oriented Programming, Modern Physics</p>
+                        <p>Data Structures and Algorithms, Intro to Artificial Intelligence, Computer Organization and Programming, Discrete Math, Linear Algebra, Differential Equations, Object-Oriented Programming, Calculus III</p>
                     </div>
                 </div>
             </div>
@@ -85,12 +85,45 @@
                                 <h3>Machine Learning Engineer Intern – GNC</h3>
                                 <p class="company">Terran Orbital Corporation, a Lockheed Martin Company - Irvine, CA</p>
                             </div>
-                            <span class="date">Summer 2026</span>
+                            <span class="date">Jun. 2026 – Aug. 2026</span>
                         </div>
                         <ul>
-                            <li>Custom-built and trained a U-Net CNN on proprietary night-sky imagery to detect star centroids under high-speed maneuvers via star centroid maps, achieving 50 arcsecond pointing accuracy at a 5 deg/s slew rate – a 3x improvement over baseline</li>
-                            <li>Implemented the QUEST algorithm consuming CNN-extracted centroids for real-time quaternion-based attitude estimation; optimized low-latency inference on NVIDIA Jetson edge hardware with OpenCV, profiling GPU/ML accelerator microarchitecture to cut latency 40%</li>
-                            <li>Developed a real-time synthetic star-streak simulation environment to test/validate the CNN/QUEST pipeline pre-deployment; validated attitude estimates against IMU telemetry across 12+ hardware-in-the-loop tests, informing model tuning decisions ahead of production deployment</li>
+                            <li>Custom-built a U-Net CNN on night-sky imagery to detect star centroids under high-speed maneuvers via star centroid maps, achieving 23 arcsecond pointing error at a 5 deg/s slew rate – a 3x improvement</li>
+                            <li>Implemented QUEST on CNN centroids for real-time quaternion attitude estimation; deployed via TensorRT quantization and CUDA/cuDNN on NVIDIA Jetson with OpenCV vision, cutting latency 40%</li>
+                            <li>Developed a synthetic star-streak simulation environment to test and validate the CNN/QUEST pipeline pre-deployment; validated attitude estimates against IMU telemetry across 12+ hardware-in-the-loop tests</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img src="imgs/georgia-tech-yellow-jackets-logo-png_seeklogo-527918.png" alt="Georgia Tech Logo" class="company-logo">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Machine Learning Researcher – SAIL Lab</h3>
+                                <p class="company">Georgia Institute of Technology - Atlanta, GA</p>
+                            </div>
+                            <span class="date">Aug. 2026 – Present</span>
+                        </div>
+                        <ul>
+                            <li>Extended AHEAD teleoperation with a cross-attention fusion module conditioning intent prediction on language commands, improving accuracy 12% and enabling joint action classification for multi-robot control</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img src="imgs/georgia-tech-yellow-jackets-logo-png_seeklogo-527918.png" alt="Georgia Tech Logo" class="company-logo">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Machine Learning Researcher – Dynamics and Control Group</h3>
+                                <p class="company">Georgia Institute of Technology - Atlanta, GA</p>
+                            </div>
+                            <span class="date">Oct. 2026 – Present</span>
+                        </div>
+                        <ul>
+                            <li>Developing a Res-U-Net mapping dual-wavelength interferograms (460/640 nm) to thickness profiles, using the synthetic wavelength to resolve phase wrapping; reached 18 nm RMSE on held-out test profiles</li>
+                            <li>Built a physics-based simulator rendering interferograms from Gaussian random field thickness profiles with noise, illumination nonuniformity, and LED bandwidth for domain randomization, generating 50K pairs</li>
                         </ul>
                     </div>
                 </div>
@@ -106,8 +139,8 @@
                             <span class="date">Jan. 2026 – Present</span>
                         </div>
                         <ul>
-                            <li>Built StudyBuddy, an end-to-end AI-powered application (OCR, NLP, RAG) with React/Llama 3/Ollama; orchestrated LLM workflows via LangChain/GPT for adaptive learning; used a SQL (SQLite) data pipeline for progress tracking and content tagging</li>
-                            <li>Owned the pipeline from data ingestion to deployment: fine-tuned Llama 3, trained multimodal deep learning models on NVIDIA PACE ICE with CUDA GPU acceleration and MLflow tracking, achieving 70% faster comprehension across 50+ datasets</li>
+                            <li>Built StudyBuddy with OCR, NLP, and RAG on Llama 3/Ollama; orchestrated LLM workflows via LangChain to generate adaptive modules from quiz scores, with SQLite progress tracking and content tagging</li>
+                            <li>Evaluated ChatGT and CUDA Llama 3 fine-tuning on the NVIDIA PACE ICE cluster; benchmarked retrieval accuracy/hallucination rate across 50+ datasets, driving a 70% improvement in student comprehension</li>
                         </ul>
                     </div>
                 </div>
@@ -206,6 +239,32 @@
             <h2 class="section-title">Projects & Publications</h2>
             <div class="projects-grid">
                 <div class="project-card">
+                    <h3>AI DJ – Learned Transition Scorer <span class="in-progress-tag">(In Progress)</span></h3>
+                    <p>Learning-to-rank model that scores downbeat pairs across tracks with a listwise softmax loss, learning Spotify's hand-tuned costs from 8,287 DJ transitions; hits DJ cues within 4 bars on 68% of test pairs. Fine-tuned Beat This! on Serato beat grids as pseudo-labels across 11K+ tracks, raising bar-accurate downbeats on held-out hand-annotated tracks from 22% to 88% (Serato: 93%) for fully automatic inference.</p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">LightGBM</span>
+                        <span class="skill-tag">librosa</span>
+                        <span class="skill-tag">Learning to Rank</span>
+                    </div>
+                    <a href="https://github.com/Sharko123/AI-DJ" target="_blank" class="project-link">View on GitHub →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Depot Trajectory Prediction <span class="in-progress-tag">(In Progress)</span></h3>
+                    <p>PyG graph neural network predicting trajectories of 30+ vehicles in dense depots, cutting minADE 42% vs. a constant-velocity baseline. Mined 10K+ logs in SQL to target long-tail failures (miss rate 31% to 18%); deployed in C++ via ONNX at 12 ms/frame, validated on 2K+ replay scenarios for real-time use.</p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">PyG</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">ONNX</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
                     <h3>Perfect Punch - BDBI@GT <span class="in-progress-tag">(In Progress)</span></h3>
                     <p>AI-powered boxing assistant that classifies punches and evaluates metrics using active learning pipeline with KNNs, Neural Networks, and Random Forests achieving 96% accuracy. Integrated LLM coaching agent with Flask–React dashboard.</p>
                     <div class="project-skills">
@@ -300,6 +359,31 @@
                     </div>
                     <a href="https://github.com/Sharko123/AppliedResearchOAfa2025" target="_blank" class="project-link">View on GitHub →</a>
                 </div>
+
+                <div class="project-card">
+                    <h3>GT Movies Store</h3>
+                    <p>Full-stack Django web application that lets users browse, search, and purchase movies online. Users can register and log in, view and search the movie catalog, add movies to a shopping cart, and place orders, with an order history to track past purchases. A review system lets users write, edit, and delete their own reviews and report inappropriate ones to keep content clean, while admins have full CRUD access to manage users, movies, reviews, and orders. The interface is responsive across desktop, tablet, and mobile screen sizes.</p>
+                    <div class="project-video">
+                        <video controls preload="metadata" playsinline>
+                            <source src="videos/gt-movies-store-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                            <a href="videos/gt-movies-store-demo.mp4">Download the demo video</a>.
+                        </video>
+                        <p class="video-caption">Demo walkthrough</p>
+                    </div>
+                    <div class="project-process">
+                        <h4>Process</h4>
+                        <p>I started by translating the assignment's user stories into a set of core models — users, movies, reviews, cart items, and orders — then mapped each story to the corresponding Django view, template, and URL route. I worked feature by feature: authentication and registration first, then the movie catalog and search, followed by the cart and order flow, and finally the review system with edit/delete/report functionality. Throughout, I used Django's built-in admin tools as a starting point for the administrator CRUD requirements, then customized permissions so only admins could manage users, movies, reviews, and orders. When I hit uncertainty, particularly around cart state management and permission handling, I referred back to Django's documentation and tested each user story individually against the running app before moving to the next feature, to make sure the implementation matched the required behavior rather than just looking correct.</p>
+                    </div>
+                    <div class="project-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Full-Stack</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -324,6 +408,11 @@
                             <div class="skill-item">C++</div>
                             <div class="skill-item">C#</div>
                             <div class="skill-item">R</div>
+                            <div class="skill-item">Go</div>
+                            <div class="skill-item">Rust</div>
+                            <div class="skill-item">TypeScript</div>
+                            <div class="skill-item">MATLAB</div>
+                            <div class="skill-item">NoSQL</div>
                         </div>
                     </div>
 
@@ -337,6 +426,10 @@
                             <div class="skill-item">Angular</div>
                             <div class="skill-item">Django</div>
                             <div class="skill-item">FastAPI</div>
+                            <div class="skill-item">Spring</div>
+                            <div class="skill-item">LangChain</div>
+                            <div class="skill-item">Apache Spark</div>
+                            <div class="skill-item">Kafka</div>
                         </div>
                     </div>
 
@@ -349,6 +442,16 @@
                             <div class="skill-item">Pandas</div>
                             <div class="skill-item">NumPy</div>
                             <div class="skill-item">Matplotlib</div>
+                            <div class="skill-item">OpenCV</div>
+                            <div class="skill-item">PyG</div>
+                            <div class="skill-item">ONNX</div>
+                            <div class="skill-item">TensorRT</div>
+                            <div class="skill-item">LightGBM</div>
+                            <div class="skill-item">librosa</div>
+                            <div class="skill-item">CUDA</div>
+                            <div class="skill-item">MLflow</div>
+                            <div class="skill-item">Docker</div>
+                            <div class="skill-item">Kubernetes</div>
                             <div class="skill-item">Git</div>
                             <div class="skill-item">AWS</div>
                             <div class="skill-item">Azure</div>
@@ -441,6 +544,9 @@
                 <div class="experience-areas-grid">
                     <div class="experience-area-item">Machine Learning</div>
                     <div class="experience-area-item">Computer Vision</div>
+                    <div class="experience-area-item">Robotics</div>
+                    <div class="experience-area-item">Graph Neural Networks</div>
+                    <div class="experience-area-item">LLMs & RAG</div>
                     <div class="experience-area-item">AI Fairness</div>
                     <div class="experience-area-item">Neural Networks</div>
                     <div class="experience-area-item">Data Mining</div>
